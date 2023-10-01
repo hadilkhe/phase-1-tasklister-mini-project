@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const taskList = document.getElementById("tasks");
 
   taskForm.addEventListener("submit", function (event) {
-    event.preventDefault(); // Prevent form submission and page reload
+    event.preventDefault(); 
 
     const taskText = newTaskInput.value;
     if (taskText.trim() !== "") {
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const deleteButton = document.createElement("button");
       deleteButton.textContent = "Delete";
       deleteButton.addEventListener("click", function () {
-        taskItem.remove(); // Remove the task when the "Delete" button is clicked
+        taskItem.remove(); 
       });
 
       taskItem.appendChild(deleteButton);
